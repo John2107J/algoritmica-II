@@ -1,0 +1,68 @@
+TAD vistos hasta ahora
+Pilas
+Colas
+
+Listas
+    Crear
+    Agregar elemento 
+    Borrar un elemento de la Listas
+    Preguntar por la longitud
+    Imprimir valor/lista completa
+    Buscar un valor en lista
+
+Nodo 
+    Dato
+    prox
+
+class Nodo: 
+    def __init__(self,dato,prox):
+        self.dato=dato
+        self.prox=prox
+
+    def __str__ (self):
+        return str (self.dato)
+
+n1 = nodo ("tomate", prox=none) """None si me pasas parametro lo tomo sino me quedo con el none
+n2 = nodo ("lechuga", prox=None)
+n3 = nodo ("limon", prox=None)
+
+n1.prox = n2
+n2.prox = n3
+
+TAMBIEN SE PUEDE
+
+n1 = (nodo ("tomate",nodo("Lechuga",nodo("limon))))
+
+============================================================
+
+Como Imprimir lista
+
+def imprimir_nodos (nodo):
+    while nodo is not None:
+        print (nodo)
+        nodo = nodo.prox
+
+Como hago para imprimir al revez?
+Recursividad
+
+def imprimir_al_revez (nodoi):
+if nodoi == None:
+    return
+
+cabeza = nodoi 
+imprimir_al_revez (nodoi.prox)
+print cabeza
+
+<- lista enlazada simple sin cabecera, es decir la defincion de lista
+En cambio la lista enlazada es de memoria dinamica y contigua.
+=============================================================
+
+!!!Tener cuidado el orden porque puedo perder el enlace de la lista!!!
+
+nuevo.prox = prim
+self.prim = nuevo
+
+ultimo.prox = nuevo
+
+nuevo.prox = anterior.prox
+anterior.prox = nuevo

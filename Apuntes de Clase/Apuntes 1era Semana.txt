@@ -1,0 +1,36 @@
+1- Estragias de diseño
+    -Objetivo de programa -> Resuelve un problema COMPUTABLE
+    -Requisitos                                                                   Python -> Obj -> Codigo maquina
+    -Diseño descendente
+    -Ocultamiento de información
+    -Codigo autodocumentado
+    -Planificacion
+
+=====================================
+
+Lenguaje
+    -Estructura de control
+    -Tipos de datos
+    -Entrada y salida de datos
+    -Opercaiones matematicas/logicas
+    -Herramientas que permitan dividir el problema en partes mas pequeñas
+
+====================================
+
+1-Analizar el Problema
+2-Especificar la solucion
+3-diseñar la solucion
+4-Implementar la solucion
+    -Escribir programa
+5-Probar el programa
+    -Casos especiales
+    -Que haga lo que tenga que hacer
+6-Mantener el programa
+
+=====================================
+
+Recursion Directa
+    A -> A
+
+Recursion Indirecta
+    A -> B -> A

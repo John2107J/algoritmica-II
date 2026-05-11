@@ -1,0 +1,9 @@
+TAD = Tipos Abstractos de Datos: Estructuras + comportamientos
+    1er nivel = Nivel logico, Definicion   (que hago?)
+
+    2do Nivel = Implementacion (Como lo hago?)
+
+    3er nivel = Nivel de usuario -> Uso de codigo en otra aplicacion
+
+
+Dice que hace, que puedo guardar, pero no como implementarlo

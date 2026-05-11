@@ -1,0 +1,5 @@
+Para que no se cierre la ventana al graficar
+    turtle.mainloop() -> Import turtle
+    t.mainloop() -> import turtle as t
+    t.mainloop
+        turtle

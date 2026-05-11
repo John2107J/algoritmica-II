@@ -1,0 +1,25 @@
+try, except, finally
+
+try: 
+    -
+except ValueError:
+    print ("El valor ingresado es...)
+else:
+    #se ejecuta si no hubo error el try
+finally:
+    #se ejecuta SIEMPRE
+
+==========================
+
+tipedo explicit
+
+def factorial (n:int) -> int:
+    if n =< 1:
+        return 1
+    return n * factorial (n-1)
+
+===============================
+
+Numero mayor representable en mi maquina
+float ("inf")
+float ("Infinity")

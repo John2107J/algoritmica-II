@@ -1,0 +1,65 @@
+if __name__ == '__main__'
+
+string
+    .split()-> Divide la cadena en segmentos
+    c3=" ".join(c2)-> hace una cadena uniendola por la condicion dada, y la cadena como parametro
+
+listas -> Vectores
+    CREAR SUMAR LISTAS:
+
+        milista= []
+        milista.append -> Agrega al final
+        milista + "hola"
+        insert -> en una posicion
+        extend-> extiende con los elementos
+
+        milista=["hoy","llueve"]
+        otralista[1,3,6]
+            milista.appende(otralista)-> milista["hoy","llueve",[1,3,9]]
+            milista.insert(0,"Mañana) -> milista = ["Mañana", "hoy', "llueve"]
+
+        milista.count("hoy") = 1
+        milista.index(29)
+
+    BORRAR/ELIMINAR 
+        del milista[1] -> ["hoy"]
+        milista.remove ["llueve"] -> ["hoy"] 
+            (puede dar error por sacar valores q no estan) o (esten repetidos)
+            o por pasarse de indice tambien
+        
+        
+
+    
+
+Tupla -> Variable inmutable (no se puede cambiar)
+
+Diccionarios -> Guardo un dato/valor (Registro C++)
+    mid ={}
+    mid = {'nombre':'John'}
+        = {'nombre': ['John','Michael'],
+            'Apellido': 'Jones'}
+    
+    mid.get ('nombres) -> []
+    mid ['Nombres'] = "un nombre"
+    mid['nombre'] =
+
+
+Conjuntos -> No puede tener datos repetidos
+
+===================================================================
+
+Analisis Algoritmicos
+1) Modelo RAM (Random Acces Machine)
+    Recursos
+        Tiempo CPU
+            Datos 
+            Calidad del Codigo
+            Complejidad del programa
+            Todas las Opercaiones (simples) valen 1 paso {lectura,scan, asignar, comparacion, op.math}
+
+        Memoria (RAM)
+        Disco (Almacenamiento persistente)
+        Internet
+        Tokens (en IA)
+
+2) Analisis Asintotico
