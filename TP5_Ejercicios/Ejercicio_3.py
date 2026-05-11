@@ -4,7 +4,7 @@
 import sys
 import os
 sys.path.insert(0, os.path.dirname(__file__))
-from ejercicio1 import Nodo, ListaEnlazada
+from Ejercicio_1 import Nodo, ListaEnlazada
 
 
 class ListaEnlazadaComparable(ListaEnlazada):
