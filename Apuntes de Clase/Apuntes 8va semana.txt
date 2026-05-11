@@ -1,0 +1,42 @@
+Arboles Binarios
+    -Raiz (punto de inicio)
+    -Padres
+    -Hijos
+        -Hasta 2 Hijos
+    -Hojas
+
+    Tamaño: Suma de los nodos, que los componen
+    Altura: Suma de los enlaces
+        del Arbol
+        de un nodo en particular
+
+    Clasificar en llenos, completos, perfectos
+        Perfectos: Todos los niveles estan llenos, no hay lugar
+        Completos: 
+
+Todos los arboles usan algoritmos RECURSIVOS
+
+=====================
+
+ARBOLES BINARIOS EXPRESIVOS
+
+Recorrido
+    -Prefijo
+    -Postfijo
+    -Inorder (en general no se usa)
+        -(sirve si le agrego parentesis "todo el tiempo")
+
+
+NOTACION POLACA INVERSA
+
+====================================
+
+Arboles Binarios de Busqueda
+    -Arbol ordenado, su orden es importante
+    -Arbol desordenado, No importa el orden de sus nodos
+
+    -cada nodo del Arbol es mayor a su subarbol del lado izquierdo
+    -Cada nodo del Arbol es menor a su subarbol del lado derecho
+
+    -Agregar un nodo:
+    -Buscar un elemento:
