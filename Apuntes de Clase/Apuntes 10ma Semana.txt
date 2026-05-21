@@ -1,0 +1,120 @@
+Todo arbol es un grafo PERO no todo grafo es un arbol
+
+GRAFOS (Es una estructura de dato NO lineal, muy flexibles)
+    -Estructuras no lineales
+        -Un elemento puede tener mas de un suceesor o predecesor
+    -No esta obligado a tener algoritmos recursivos
+    -Vertices (antes nodos)
+    -Aristas o Arcos (antes enlaces)
+
+Teoria de GRAFOS
+    -Puede ser dirigido o no
+        -ES dirigo el arco que permite ir en un solo sentido
+        -Un grafo no dirigido puede ser ADYACENTE si puede ir de vertice X al vertice Z y viceversa
+
+Un camino es una secuencia de Vertices
+    -La longitud de un camino es la cantidad de arcos que tengan entre un extremo y otro
+    -CAMINO SIMPLE es el cual sus vertices son todos diferentes
+        -Solo puede coincidire el primero y el ultimo
+
+Un grafo no dirigido NO CONECTADO es el cual todos los grafos estan todos conectados
+
+Grafo dirigido, fuertemente conectado.
+    -Es cuando desde cualquier vertice puedo llegar a todos lados
+
+Grafo dirigido Debilmente conectado
+    -Cuando hay unos de los vertices que no puedo llegar
+
+El grado de vertice es la cantidad de flechas que entran y salen
+Cuando es dirigido se dice grado de entrada o grado de salida
+
+===========================================================================
+CLASIFICACION DE GRAFOS
+
+    Grafos No dirigidos
+    Grafos dirigidos
+        -Basta con un solo arco sea dirigido para decir que todo el grafo es dirigido
+
+    VERTICES (X,Z,C)
+    ARCOS ((X,Z),(Z,X),(C,C),(C,Z))
+
+    Con peso (Ponderado) vs Sin peso
+        Cada arista tiene un peso o valor numerico
+        Para grafos sin ponderacion se usa el algortimo de busqueda Breadth First Search (BFS)
+        Para grafos ponderados requiere algoritmos mas complejos
+
+    SIMPLES o NO SIMPLES
+        -Grafo es simple si no hay bucles o multiples aristas
+        -Un grafo NO es simple, si tengo bucles o multiples Aristas
+
+    DISPERSO O DENSO 
+        A OJO
+        un grafo es denso cuando tiene un numero cuadratico (de la mitad de vertices) de Aristas
+        disperso cuando tengo muchos vertices y no relativamente muchas Aristas
+
+    Ciclico o Aciclico
+        -Ciclico es cuando "puedo dar una vuelta" salir y volver al mismo punto (basta con un camino que cumpla)
+        -Aciclico NO importa del vertice que salga no puedo volver a ese mismo
+        Un grafo no dirigido es ciclico (mientras no sea una lista,fila)
+    
+    Incrustado vs Topologico
+        -Un grafo Incrustado es cuando asigno posiciones geometricas a los vertices y arcos
+        -Un grafo Topologico es el sigue geograficamente su "camino" (no son rectas)
+    
+    Explicitos vs Implicitos
+        -Un grafo Implicito es el que voy construyendo a medida que voy descubriendo (ej: grafo de la amistad) (no se puede armar de antes)
+        -Un grafo Explicito es el que ya conozco todos los datos, los vertices y relaciones, y lo desarrollo
+    
+    Etiquetado vs No Etiquetado
+        -Etiquetado es cuando le pongo nombre al vertice
+        -NO etiquetaado es no tener nombre
+
+===========================================================================
+
+REPRESENTACION DE UN GRAFO
+
+    Elegir la estructura correcta tiene un impacto enorme en el desempeño del algoritmos
+    Hay dos elecciones basicas
+        -Matrices de Adyacencia
+        -Listas de Adyacencia
+
+    Ej: Grafo dirigido
+        Matriz
+              0  1  2  3  4
+            0    1        1
+            1          1
+            2             1
+            3          1
+            4    1
+
+        lista
+        0 -> 1 ->4
+        1 -> 3
+        2 -> 4
+        3 -> 3
+        4 -> 1
+    
+    EJ: grafo NO dirigido
+         Matriz
+              0  1  2  3  4
+            0    1        1
+            1 1        1  1
+            2          1  1
+            3    1  1
+            4 1  1  1
+
+        lista
+        0 -> 1 ->4
+        1 -> 3
+        2 -> 4
+        3 -> 3
+        4 -> 1
+
+    SI EL GRAFO ES NO DIRIGIDO LA MATRIZ ADYACENTE ES SIMETRICA
+
+    GRAFO CON MATRIZ DE ADYACENCIA 
+        Ej: Mapa de calles de Manhattan en la ciudad de Nueva York
+        Desventaja posibles: Reservar mucho espacio para la matriz y usar poco espacio
+    
+    GRAFO CON LISTA DE ADYACENCIA
+        La forma normalizada de un grafo es la lista de Adyacencia
