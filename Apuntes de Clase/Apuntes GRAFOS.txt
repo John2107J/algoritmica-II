@@ -69,6 +69,9 @@ CLASIFICACION DE GRAFOS
         -Etiquetado es cuando le pongo nombre al vertice
         -NO etiquetaado es no tener nombre
 
+    Conexo vs NO Conexo
+        
+
 ===========================================================================
 
 REPRESENTACION DE UN GRAFO
