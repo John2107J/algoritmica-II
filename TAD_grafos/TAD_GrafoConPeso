@@ -67,7 +67,7 @@ class Grafo:
     def primer_adyacente(self, x):
         """ Devuelve el primer vértice adyacente (si existe) de x"""
         if x not in self.lista_vertices:
-            raise("El vértice no existe en el diccionario del Grafo")
+            raise ValueError("El vértice no existe en el diccionario del Grafo")
         else:
             return self.lista_vertices[x]
 

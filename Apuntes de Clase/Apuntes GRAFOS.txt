@@ -17,7 +17,8 @@ Un camino es una secuencia de Vertices
     -CAMINO SIMPLE es el cual sus vertices son todos diferentes
         -Solo puede coincidire el primero y el ultimo
 
-Un grafo no dirigido NO CONECTADO es el cual todos los grafos estan todos conectados
+Un grafo no dirigido CONEXO es el cual todos los grafos estan todos conectados
+Un grafi es NO CONEXO cuando uno de los grafos no esta conectado
 
 Grafo dirigido, fuertemente conectado.
     -Es cuando desde cualquier vertice puedo llegar a todos lados
@@ -121,3 +122,11 @@ REPRESENTACION DE UN GRAFO
     
     GRAFO CON LISTA DE ADYACENCIA
         La forma normalizada de un grafo es la lista de Adyacencia
+
+=========================================================
+
+DFS (Busqueda en Profundidad)
+BFS (Busqueda por Amplitud) -> Camino mas corto en grafos SIN peso
+Topologico: Ordenar linealmente una seri de tareas (para DAG) (Grafos Aciclicos Dirigidos)
+Algoritmo de DIJKSTRA: Camino mas norto en grafos ponderados con pesos positivos
+Algoritmo de FLOYD WARSHELL: Camino mas corto en grafos ponderados con pesos positivos o negativos (sin ciclos negativos)

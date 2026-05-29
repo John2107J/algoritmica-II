@@ -1,0 +1,10 @@
+Preguntas:
+    1. ¿Cuántas multiplicaciones se hacen en el peor caso? ¿Cuantas sumas?
+    2. ¿Cuantas multiplicaciones se hacen en el caso promedio?
+    3. ¿Puede mejorar este algoritmo?
+
+Respuestas:
+    1) En el peor caso se hacen 2 multiplicacion y 1 suma por cada iteracion
+    2) El algoritmo es de orden CONSTANTE (n) es decir que el mejor, peor y caso promedio son iguales
+    si se recorre de 1 hasta n con n=3, multiplicaciones acumuladas van a ser 6 (2n) y sumas van a ser 3 (n).
+    3) No, un algortimo de orden constante no suele tener mejora en relacion a su tiempo ya que es el menor tiempo posible

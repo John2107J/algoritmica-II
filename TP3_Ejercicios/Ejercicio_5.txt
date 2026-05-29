@@ -1,0 +1,38 @@
+Ejercicio 5
+a) Si demuestro que un algoritmo es O(n²) en el peor caso, ¿es posible que sea O(n) para algunos datos?
+Sí, es posible.
+O(n²) en el peor caso significa que existe una cota superior cuadrática para las entradas más desfavorables. Pero para entradas particulares (por ejemplo, un array ya ordenado en un algoritmo de ordenamiento), el algoritmo puede ejecutarse en O(n) pasos.
+Ejemplo: Insertion Sort es O(n²) en el peor caso, pero O(n) cuando la entrada ya está ordenada.
+
+b) Si demuestro que un algoritmo es O(n²) en el peor caso, ¿es posible que sea O(n) para todos los datos?
+Sí, también es posible (aunque la cota sería floja).
+Si el algoritmo es O(n) para todos los datos, entonces en particular también es O(n²) para todos los datos, ya que O(n) ⊆ O(n²). La cota O(n²) simplemente no sería ajustada.
+
+c) Si demuestro que un algoritmo es Θ(n²) en el peor caso, ¿es posible que sea O(n) para algunos datos?
+Sí, es posible.
+Θ(n²) en el peor caso dice que las entradas más desfavorables tienen comportamiento exactamente cuadrático. Pero esto no impide que para ciertas entradas específicas (caso favorable), el algoritmo corra en O(n).
+El peor caso y el comportamiento en entradas particulares son cosas distintas.
+
+d) Si demuestro que un algoritmo es Θ(n²) en el peor caso, ¿es posible que sea O(n) para todos los datos?
+No, es imposible.
+Si fuera O(n) para todos los datos, entonces en particular también lo sería para las entradas del peor caso. Pero Θ(n²) en el peor caso implica que esas entradas requieren al menos cn² pasos (por la cota inferior Ω(n²)), lo cual contradice ser O(n).
+
+e) ¿Es f(n) de orden Θ(n²)?
+f(n)={100n2si n es par20n2−nlog⁡2nsi n es imparf(n) = \begin{cases} 100n^2 & \text{si } n \text{ es par} \\ 20n^2 - n\log_2 n & \text{si } n \text{ es impar} \end{cases}f(n)={100n220n2−nlog2​n​si n es parsi n es impar​
+Sí, f(n) = Θ(n²).
+Hay que demostrar que existen constantes c₁, c₂ > 0 y n₀ tal que para todo n ≥ n₀:
+c1⋅n2≤f(n)≤c2⋅n2c_1 \cdot n^2 \leq f(n) \leq c_2 \cdot n^2c1​⋅n2≤f(n)≤c2​⋅n2
+Cota superior (O(n²)):
+
+Si n par: f(n) = 100n² ≤ 100n²  ✓
+Si n impar: f(n) = 20n² − n log₂n ≤ 20n²  ✓
+
+Tomando c₂ = 100 vale para todos los casos.
+Cota inferior (Ω(n²)):
+
+Si n par: f(n) = 100n² ≥ 100n²  ✓
+Si n impar: f(n) = 20n² − n log₂n. Como n log₂n = o(n²), para n suficientemente grande n log₂n ≤ 10n², entonces:
+
+f(n)≥20n2−10n2=10n2f(n) \geq 20n^2 - 10n^2 = 10n^2f(n)≥20n2−10n2=10n2
+Tomando c₁ = 10 vale para n suficientemente grande.
+Por lo tanto: f(n) = Θ(n²) ✓
