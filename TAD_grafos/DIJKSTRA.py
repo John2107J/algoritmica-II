@@ -1,4 +1,4 @@
-from ClaseGrafoP import *
+from TAD_GrafoConPeso import *
 
 def inicializar_v(vertices):
     """ Devuelve una lista c/los vértices sin descubrir """

@@ -29,6 +29,8 @@ Grafo dirigido Debilmente conectado
 El grado de vertice es la cantidad de flechas que entran y salen
 Cuando es dirigido se dice grado de entrada o grado de salida
 
+El vertice que no tiene salida se le llama SUMIDEROS
+
 ===========================================================================
 CLASIFICACION DE GRAFOS
 
@@ -123,10 +125,16 @@ REPRESENTACION DE UN GRAFO
     GRAFO CON LISTA DE ADYACENCIA
         La forma normalizada de un grafo es la lista de Adyacencia
 
+Cuando me conviene usar una matriz de adyacencia? y cuando una lista de adyacencia?
+???
+Si el grafo es Denso o disperso
+Tambien si necesito saber el grado de entrada
+    si el grafo si es denso y necesito saber el grado de entrada me puedo plantear pasarme a una matriz
+El grafo suele ser mas flexible
 =========================================================
 
 DFS (Busqueda en Profundidad)
-BFS (Busqueda por Amplitud) -> Camino mas corto en grafos SIN peso
+BFS (Busqueda por Amplitud) -> Camino mas corto en grafos SIN peso (Por niveles)
 Topologico: Ordenar linealmente una seri de tareas (para DAG) (Grafos Aciclicos Dirigidos)
 Algoritmo de DIJKSTRA: Camino mas norto en grafos ponderados con pesos positivos
 Algoritmo de FLOYD WARSHELL: Camino mas corto en grafos ponderados con pesos positivos o negativos (sin ciclos negativos)
