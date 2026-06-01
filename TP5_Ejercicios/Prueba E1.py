@@ -39,7 +39,26 @@ Lista2.insertar(3,"Manzana")
 #print("Intercambiar: ", Lista1.intercambiar("Tomate"))
 #==================================================
 #Ejercicio 5
-Lista1.imprimeLista()
-print()
-Lista1.intercambiar("Manzana")
-print("Intercambiar", Lista1)
+#Lista1.imprimeLista()
+#print()
+#Lista1.intercambiar("Manzana")
+#print("Intercambiar", Lista1)
+#===================================================
+# Ejercicio 6
+#listaUno = ListaEnlazada()
+#listaUno.agregar(1)
+#listaUno.agregar(3)
+#listaUno.agregar(4)
+#listaUno.agregar(5)
+#istaUno.agregar(8)
+
+#istaDos = ListaEnlazada()
+#listaDos.agregar(0)
+#istaDos.agregar(2)
+#istaDos.agregar(6)
+#listaDos.agregar(9)
+
+#print("Mezclar dos listas:", listaUno.mezclarListas(listaDos))
+#==========================================================
+# Ejercicio 7
+

@@ -211,3 +211,26 @@ class ListaEnlazada:
             prev_prev = prev
             prev = actual
             actual = actual.prox
+    
+
+    def mezclarListas(self, otra):
+
+        l3 = []
+
+        # Recorrer primera lista
+        actual = self.prim
+        while actual is not None:
+            l3.append(actual.dato)
+            actual = actual.prox
+
+        # Recorrer segunda lista
+        actual = otra.prim
+        while actual is not None:
+            l3.append(actual.dato)
+            actual = actual.prox
+
+        # Ordenar de mayor a menor
+        l3 = sorted(l3, reverse=True)
+
+        return l3
+
