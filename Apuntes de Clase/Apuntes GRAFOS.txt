@@ -138,3 +138,8 @@ BFS (Busqueda por Amplitud) -> Camino mas corto en grafos SIN peso (Por niveles)
 Topologico: Ordenar linealmente una seri de tareas (para DAG) (Grafos Aciclicos Dirigidos)
 Algoritmo de DIJKSTRA: Camino mas norto en grafos ponderados con pesos positivos
 Algoritmo de FLOYD WARSHELL: Camino mas corto en grafos ponderados con pesos positivos o negativos (sin ciclos negativos)
+
+TOPOLOGICO (No puedo entrar por cualquier vertices)
+    Debo empezar por el vertice con grado de entrada 0
+    Todas las flechas deben ir para adelante, no pueden volver (ejemplo correlativas)
+ Que quiere decir DAG, D de Dirigido, A Aciclicos, G Grafos
