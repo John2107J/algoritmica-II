@@ -1,5 +1,4 @@
-from TAD_grafos import *
-from TAD_Cola import *
+from TAD_grafos.TAD_Cola import *
 
 def BFS(G, s):
     estado = {}

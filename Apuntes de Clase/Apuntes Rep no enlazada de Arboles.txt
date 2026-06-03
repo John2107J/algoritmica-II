@@ -1,0 +1,20 @@
+REPRESENTACION no enlazada de Arboles
+    Puedo almacenar en un vector un Arbol Binario COMPLETO
+    Funciones
+        padre(pos) = (pos -1) //2
+        hijoizquierdo (pos) = 2pos + 1
+        hijoderecho (pos) = 2pos + 2
+
+HEAP
+    -ARBOL COMPLETO
+    -MONTICULO 
+        -MAX HEAP 
+            Saca el elemento mayor del arbol
+            Se trae el elemento mas chico y lo coloca en la raiz, luego compara e intercambia de lugar con los hijos mas grandes
+        -MIN HEAP (en python se llama: heapQ)
+        
+
+
+Orden parcial tiene en cuenta el orden verticalmente (Ariiba hacia abajo)
+Orden Total tiene en cuenta el orden vertical y horizontal (Arriba hacia abajo y de izquierda a derecha)
+

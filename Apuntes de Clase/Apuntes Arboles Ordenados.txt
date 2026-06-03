@@ -9,8 +9,8 @@ A su vez H es ancetro de SI misma
 
 Arboles Ordenados
     Tengo un orden parcial o total y es importante
-    Arbol Binario
-    Arbol de Busqueda
+        Arbol Binario
+        Arbol de Busqueda
 
 Arboles desordenados
     El orden de los nodos no es relevante

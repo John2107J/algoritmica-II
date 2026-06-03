@@ -1,5 +1,4 @@
-from TAD_grafos import *
-from TAD_Cola import *
+from TAD_grafos.TAD_Cola import *
 
 def procesar_vertice_temprano(valor_vertice):
     print("Vértice ", valor_vertice)
