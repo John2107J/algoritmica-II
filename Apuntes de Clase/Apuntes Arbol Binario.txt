@@ -33,10 +33,11 @@ NOTACION POLACA INVERSA
 
 Arboles Binarios de Busqueda
     -Arbol ordenado, su orden es importante
-    -Arbol desordenado, No importa el orden de sus nodos
 
     -cada nodo del Arbol es mayor a su subarbol del lado izquierdo
     -Cada nodo del Arbol es menor a su subarbol del lado derecho
 
     -Agregar un nodo:
     -Buscar un elemento:
+
+Arbol desordenado, No importa el orden de sus nodos

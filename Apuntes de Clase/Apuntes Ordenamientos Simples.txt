@@ -1,0 +1,44 @@
+Burbuja y burbuja bidireccional
+    Mejor tiempo (n)
+    Peor tiempo (n^2)
+
+Seleccion
+    Orden O(n^2), no importa si el vector esta ordenado o no
+    No usa espacio adicional 
+
+Insercion
+    Mejor tiempo (n)
+    Peor tiempo (n^2)
+    No usa espacio adicional
+
+Shell
+    Orden de (n^2)
+    Formula de distancia: d = (n elementos +1) // 2
+        n = 12 -> 6,3,2,1
+
+bucket sort (bin sort)
+    Usa estructura auxiliar
+    Debe cumplir requisitos el conjunto de datos
+        1) Distribucion Uniforme
+            quiere decir que cuando los agrupe en "baldes" deben tener mas o menos una misma cantidad
+        2) Una funcion de hash
+            Ordenamos y distribuimos los datos en el baldes
+
+Mergesort (Divide y venceras)
+    La mayoria de implmentaciones son Ordenamiento estable
+    divide recursivamente y mezcla ordenando
+
+Quicksort (Divide y venceras)
+    Orden (n log n)
+    En el pero caso (n^2) (Poco comun)
+
+Heapsort (heap debe cumplir de arbol completo y MONTICULO)
+
+Ordenamiento Externo
+    Debo usar buffers, es un almacenamiento intermedio que me permite salvar el tiempo de almacenamiento que va usar la ram (y procesamiento del disco.)
+
+
+
+
+Ordenamiento estable
+    A claves repetidas respeta el orden en el que estaban prestablecidos
