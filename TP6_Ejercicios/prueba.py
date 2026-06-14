@@ -1,5 +1,6 @@
 from TadArbolBBusqueda import *
 from TadArbolB import *
+from TadArbolBE import *
 
 
 # Ejercicio 1 
@@ -119,3 +120,5 @@ from TadArbolB import *
 #print("El rango de ",8," a ",11," es: ")
 #ImprimirRango(miArbol2,8,11)
 #============================================================================
+
+

@@ -1,15 +1,15 @@
 L_Ops = ['/','*','+','-']
-class Arbol:
+class ArbolBE:
     def __init__(self, dato, izq=None, der=None):
         self.dato = dato
         self.izq = izq
         self.der = der
 
     def izquierdo(self, dato):
-        self.izq = Arbol(dato)
+        self.izq = ArbolBE(dato)
 
     def derecho(self, dato):
-        self.der = Arbol(dato)
+        self.der = ArbolBE(dato)
         
     def __str__(self):
         return str(self.dato)
@@ -45,5 +45,27 @@ class Arbol:
             self.der.printInfijoCP()
         if self.dato in L_Ops:
             print(')', end= "")
+    
+    # Ejercicio 7
+    def Evaluar(self):
+        # Caso base: nodo hoja (operando)
+        if self.dato not in L_Ops:
+            return float(self.dato)
+
+        # Evaluo ambos subarboles y aplico el operador
+        izq_val = self.izq.Evaluar()
+        der_val = self.der.Evaluar()
+
+        if self.dato == '+':
+            return izq_val + der_val
+        elif self.dato == '-':
+            return izq_val - der_val
+        elif self.dato == '*':
+            return izq_val * der_val
+        elif self.dato == '/':
+            # Previene en caso de dividir po 0
+            if der_val == 0:
+                raise ZeroDivisionError("Division por cero en la expresion")
+            return izq_val / der_val
         
     
